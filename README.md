@@ -9,10 +9,10 @@ A Power BI dashboard built on MagicBricks listing data that shows where commissi
 ## Dashboard
 
 ### Page 1: Property Segmentation
-![Property Segmentation](Dashboard_Images/Dashboard_Page1_Property_Segmentation.png)
+![Property Segmentation](https://drive.google.com/file/d/1zmdu1qmdjvV_86FjFABIPX2pXP5K6RLq/view?usp=sharing)
 
 ### Page 2: Location Targeting
-![Location Targeting](Dashboard_Images/Dashboard_Page2_Location_Targeting.png)
+![Location Targeting](https://drive.google.com/file/d/17U0qkgxGAJNwaI-YzZRlNE2qHklhOEq4/view?usp=sharing)
 
 ---
 
