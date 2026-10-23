@@ -4,7 +4,7 @@
 
 A Power BI dashboard built on MagicBricks listing data that shows where commission revenue comes from and which cities and segments deserve premium listings and ads.
 
----
+--- 
 
 ## Dashboard
 
