@@ -12,7 +12,7 @@ A Power BI dashboard built on MagicBricks listing data that shows where commissi
 ![Property Segmentation](https://github.com/thiro2003/Magic-Bricks-Property-Segmentation/blob/main/Dashboard-1.png?raw=true)
 
 ### Page 2: Location Targeting
-![Location Targeting](https://drive.google.com/file/d/17U0qkgxGAJNwaI-YzZRlNE2qHklhOEq4/view?usp=sharing)
+![Location Targeting](https://github.com/thiro2003/Magic-Bricks-Property-Segmentation/blob/main/Dashboard-2.png?raw=true)
 
 ---
 
