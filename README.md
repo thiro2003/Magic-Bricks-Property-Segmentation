@@ -1,10 +1,10 @@
-# Magic-Bricks-Property-Recommendation
+# Magic-Bricks-Property-Segmentation
 
 > **Business question:** Which property segments and locations should MagicBricks target for premium listings and advertising to maximise revenue?
 
 A Power BI dashboard built on MagicBricks listing data that shows where commission revenue comes from and which cities and segments deserve premium listings and ads.
 
---- 
+---
 
 ## Dashboard
 
@@ -14,6 +14,9 @@ A Power BI dashboard built on MagicBricks listing data that shows where commissi
 ### Page 2: Location Targeting
 ![Location Targeting](https://github.com/thiro2003/Magic-Bricks-Property-Segmentation/blob/main/Dashboard-2.png?raw=true)
 
+### Recommendations
+![Recommendations](https://github.com/thiro2003/Magic-Bricks-Property-Segmentation/blob/main/Recommendations.png?raw=true)
+
 ---
 
 ## 1. Problem statement
@@ -22,7 +25,7 @@ MagicBricks earns money as commission on listings, but premium listing and ad bu
 ## 2. Dataset
 | Item | Detail |
 |---|---|
-| File | `Dataset/Magic Bricks Dataset.xlsx` |
+| File | `Sources/Magic Bricks Dataset.xlsx` |
 | Rows | 1,530 listings |
 | Period | 02 Jan 2023 to 03 Dec 2025 |
 | Cities | 10 (60 localities) |
@@ -43,6 +46,7 @@ MagicBricks earns money as commission on listings, but premium listing and ad bu
 | Avg Revenue per listing | Value of each listing |
 
 **Logic:** High Revenue + High Demand = **Vacuum** (busy, rich, no premium service layer) = **Opportunity to serve** (premium listings, ads, service layer).
+
 Analogy: a busy highway full of rich drivers with no petrol pump.
 
 ## 4. City tiers
@@ -83,6 +87,8 @@ Analogy: a busy highway full of rich drivers with no petrol pump.
 4. **Maintain:** no premium ad budget in the other five cities.
 5. **Upsell:** convert free owners in Mumbai and Delhi NCR to paid premium listings.
 
+See `Recommendations.png` for the one-page summary.
+
 ## 8. Power BI measures
 ```DAX
 Total Revenue = DIVIDE(SUM('Magic Bricks'[Commission]), 10000000)
@@ -107,19 +113,26 @@ Change the table name `'Magic Bricks'` to match your model.
 
 ## 9. Repository structure
 ```
-Magic-Bricks-Property-Recommendation/
-├── PBIX/                  Power BI dashboard file (.pbix)
-├── Dataset/               Magic Bricks Dataset.xlsx
-├── BRD/                   MagicBricks_Dashboard_BRD.pdf
-├── Dashboard_Images/      Dashboard page screenshots
+Magic-Bricks-Property-Segmentation/
+├── Sources/               Dataset (Magic Bricks Dataset.xlsx) and source files
+├── Dashboard.pbix         Power BI dashboard file
+├── Dashboard-1.png        Page 1: Property Segmentation
+├── Dashboard-2.png        Page 2: Location Targeting
+├── Recommendations.png    Summary of recommendations
 └── README.md
 ```
 
 ## 10. How to use
-1. Download the repository.
-2. Open the `.pbix` file in Power BI Desktop.
-3. If the data path breaks, point the source to `Dataset/Magic Bricks Dataset.xlsx`.
+1. Download or clone the repository.
+2. Open `Dashboard.pbix` in Power BI Desktop.
+3. If the data path breaks, go to Transform data > Data source settings and point the source to the Excel file inside the `Sources` folder.
 4. Use the tier table on Page 2 to decide where to run premium listings and ads.
 
-## 11. Business requirements
-Full requirements, scope, KPIs, risks and acceptance criteria are in `BRD/MagicBricks_Dashboard_BRD.pdf`.
+## 11. Tools used
+- Power BI Desktop (DAX, data modelling, visuals)
+- Microsoft Excel (source data)
+- GitHub (version control and documentation)
+
+## 12. Author
+**thiro2003**
+GitHub: [github.com/thiro2003](https://github.com/thiro2003)
